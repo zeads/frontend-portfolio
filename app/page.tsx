@@ -1,6 +1,13 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
+
+// import { Spinner, Button, Tooltip } from "@heroui/react";
+
 export default function Home() {
   return (
     <>
+      <Button>Submit</Button>
       <h1>Hello World</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem

@@ -1,3 +1,12 @@
 export default function page() {
-  return <div>Halaman Experience</div>;
+  return (
+    <>
+      <h1>Halaman Experience</h1>
+      <h1>Halaman Experience</h1>
+      <h1>Halaman Experience</h1>
+      <h1>Halaman Experience</h1>
+      <h1>Halaman Experience</h1>
+      <h1>Halaman Experience</h1>
+    </>
+  );
 }
