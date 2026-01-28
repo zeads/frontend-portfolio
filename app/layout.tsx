@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -14,6 +14,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins", // Opsional: gunakan jika ingin menggunakan CSS variable
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // Sesuaikan bobot yang dibutuhkan
+});
+
 export const metadata: Metadata = {
   title: "Ruri Pelinandang Portfolio",
   description: "Portfolio Ruri Pelinandang fullstack developer",
@@ -26,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     // <html lang="en" className="dark">
-    <html lang="en" className="light scroll-smooth">
+    <html lang="en" className={`light scroll-smooth ${poppins.className}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-50 text-slate-900`}
         cz-shortcut-listen="true"
