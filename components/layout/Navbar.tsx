@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +23,7 @@ export default function Navbar() {
             {/* Logo */}
             <div className="shrink-0 flex items-center">
               <Link href="/" className="text-xl font-bold text-blue-600">
-                DEV_LOGO
+                <Image src="/logo.webp" alt="Logo" width={20} height={20} />
               </Link>
             </div>
 
