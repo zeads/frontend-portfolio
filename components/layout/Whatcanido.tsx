@@ -16,7 +16,7 @@ export default function Whatcanido() {
         <h3 className="font-bold text-2xl">What I Can Do For You</h3>
       </div>
       <div className="flex flex-wrap mt-2 gap-10 lg:px-30">
-        <Card size="sm" className="mx-auto w-full max-w-sm">
+        <Card className="mx-auto w-full max-w-sm">
           <CardHeader>
             <CardTitle>Frontend Development</CardTitle>
             <CardDescription>
@@ -36,7 +36,7 @@ export default function Whatcanido() {
             </Button>
           </CardFooter>
         </Card>
-        <Card size="sm" className="mx-auto w-full max-w-sm">
+        <Card className="mx-auto w-full max-w-sm">
           <CardHeader>
             <CardTitle>Backend Architecture</CardTitle>
             <CardDescription>
@@ -56,7 +56,7 @@ export default function Whatcanido() {
             </Button>
           </CardFooter>
         </Card>
-        <Card size="sm" className="mx-auto w-full max-w-sm">
+        <Card className="mx-auto w-full max-w-sm">
           <CardHeader>
             <CardTitle>Full-Stack Solutions</CardTitle>
             <CardDescription>Tech: The Full MERN/PERN Stack.</CardDescription>
@@ -74,7 +74,7 @@ export default function Whatcanido() {
             </Button>
           </CardFooter>
         </Card>
-        <Card size="sm" className="mx-auto w-full max-w-sm">
+        <Card className="mx-auto w-full max-w-sm">
           <CardHeader>
             <CardTitle>Database Design & Management</CardTitle>
             <CardDescription>
