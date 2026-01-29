@@ -19,7 +19,7 @@ export default function Whyme() {
             <h3 className="font-bold text-sm text-blue-500">ABOUT</h3>
             <h1 className="font-bold text-2xl">Why Hire Me?</h1>
           </div>
-          <div className="max-w-lg mt-4 bg-blue-200 p-5 flex gap-3">
+          <div className="max-w-lg mt-4 bg-linear-to-r from-blue-200 to-white p-5 flex gap-3">
             <CircleArrowRight className="size-12 text-blue-500 -mt-3" />
             <div>
               <h3 className="font-semibold">End-to-End Problem Solver</h3>
@@ -29,7 +29,7 @@ export default function Whyme() {
               </p>
             </div>
           </div>
-          <div className="max-w-lg mt-4 bg-blue-200 p-5 flex gap-3">
+          <div className="max-w-lg mt-4 bg-linear-to-r from-blue-200 to-white p-5 flex gap-3">
             <CircleArrowRight className="size-12 text-blue-500 -mt-3" />
             <div>
               <h3 className="font-semibold">Type-Safe & Scalable Code</h3>
@@ -40,7 +40,7 @@ export default function Whyme() {
               </p>
             </div>
           </div>
-          <div className="max-w-lg mt-4 bg-blue-200 p-5 flex gap-3">
+          <div className="max-w-lg mt-4 bg-linear-to-r from-blue-200 to-white p-5 flex gap-3">
             <CircleArrowRight className="size-12 text-blue-500 -mt-3" />
             <div>
               <h3 className="font-semibold">Versatile Data Management</h3>
@@ -50,7 +50,7 @@ export default function Whyme() {
               </p>
             </div>
           </div>
-          <div className="max-w-lg mt-4 bg-blue-200 p-5 flex gap-3">
+          <div className="max-w-lg mt-4 bg-linear-to-r from-blue-200 to-white p-5 flex gap-3">
             <CircleArrowRight className="size-12 text-blue-500 -mt-3" />
             <div>
               <h3 className="font-semibold">Performance First</h3>
