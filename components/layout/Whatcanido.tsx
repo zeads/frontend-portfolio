@@ -10,7 +10,7 @@ import {
 
 export default function Whatcanido() {
   return (
-    <section className=" lg:h-full items-center justify-between  px-10 mt-12">
+    <section className=" lg:h-full items-center justify-between  px-10 mt-20">
       <div className="text-center">
         <h1 className="font-bold text-sm text-blue-500">SERVICES</h1>
         <h3 className="font-bold text-2xl">What I Can Do For You</h3>

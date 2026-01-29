@@ -3,15 +3,15 @@ import { CircleArrowRight } from "lucide-react";
 
 export default function Whyme() {
   return (
-    <section className=" lg:h-full items-center justify-between  px-10 mt-12 ">
+    <section className=" lg:h-full items-center justify-between  px-10 mt-20 ">
       <div className="lg:flex">
-        <div className="w-1/2 mx-auto">
+        <div className="w-1/2 mx-auto flex items-center justify-center">
           <Image
             src="/profile-why.png"
             alt="hero image"
             width={500}
             height={500}
-            className="mx-auto items-center justify-center "
+            className="mx-auto  "
           />
         </div>
         <div className="w-1/2 items-center justify-center mx-auto">
