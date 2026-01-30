@@ -82,15 +82,15 @@ export default function Navbar() {
             )}
 
             <div className="hidden lg:flex space-x-8">
-              <Button className="bg-white border text-gray-600 border-blue-500 hover:text-white hover:bg-blue-500 transition-colors font-medium">
-                <Link
-                  key="portfolio"
-                  href="/portfolio"
-                  className=" flex gap-2 items-center"
-                >
+              <Link
+                key="portfolio"
+                href="/portfolio"
+                className=" flex gap-2 items-center"
+              >
+                <Button className="bg-white border text-gray-600 border-blue-500 hover:text-white hover:bg-blue-500 transition-colors font-medium">
                   Portfolio <ArrowUpRight />
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
