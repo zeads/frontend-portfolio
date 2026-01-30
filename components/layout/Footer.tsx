@@ -1,38 +1,41 @@
+import { Github, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-slate-200 py-8 mt-20">
-      <div className="container mx-auto px-4 text-center md:text-left lg:justify-between">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-          <div>
-            <h3 className="font-bold mb-4">About</h3>
-            <p className="text-slate-500 leading-relaxed">
-              Create web more interactive and better user experience.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold mb-3">Fast Links</h3>
-            <ul className="space-y-2 text-slate-500">
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
-              <li>
-                <Link href="/experience">Experience</Link>
-              </li>
-              <li>
-                <Link href="/projects">Projects</Link>
-              </li>
-            </ul>
-          </div>
-          <div>&copy; {new Date().getFullYear()} All rights reserved</div>
+    <footer className="container mx-auto bg-white border-t border-slate-200 py-8 px-5 mt-20">
+      <div className="flex justify-between">
+        <p>Fullstack Web Developer based in Indonesia</p>
+        <div className="flex gap-2">
+          <Link
+            href="https://github.com/zeads"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 transition duration-300"
+          >
+            <Github />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/ruri-pelinandang-10711175/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 transition duration-300"
+          >
+            <Linkedin className="text-blue-500" />
+          </Link>
+          <Link
+            href="https://www.instagram.com/ruri_pelinandang/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 transition duration-300"
+          >
+            <Instagram className="text-blue-500" />
+          </Link>
         </div>
+      </div>
+      <div className="flex justify-between mt-5 border-t border-slate-100">
+        <p>&copy; {new Date().getFullYear()} Ruri Pelinandang</p>
+        <p>Powered by Next.js, Tailwind CSS, & Vercel.</p>
       </div>
     </footer>
   );
