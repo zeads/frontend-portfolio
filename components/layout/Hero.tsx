@@ -3,7 +3,10 @@ import { Button } from "../ui/button";
 
 export default function Hero() {
   return (
-    <section className="lg:h-full flex flex-col items-center justify-between lg:flex-row mt-20">
+    <section
+      id="home"
+      className="lg:h-full flex flex-col items-center justify-between lg:flex-row pt-20"
+    >
       <div className="lg:-mt-40 lg:w-1/2 mx-10 xl:ml-12">
         <h1 className="mt-10 text-5xl tracking-[0.03em] leading-15">
           Building Scalable Digital Products with Type-Safe Precision.

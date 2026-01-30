@@ -8,11 +8,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
-    { name: "Experience", href: "/experience" },
-    { name: "Contact Me", href: "/contact" },
+    { name: "Home", href: "#home" },
+    { name: "Services", href: "#services" },
+    { name: "About", href: "#about" },
+    { name: "My Workflow", href: "#myworkflow" },
+    { name: "Contact Me", href: "#contactme" },
   ];
 
   return (
@@ -22,8 +22,10 @@ export default function Navbar() {
           <div className="flex justify-between h-18 items-center">
             {/* Logo */}
             <div className="shrink-0 flex items-center">
-              <Link href="/" className="text-xl font-bold text-blue-600">
-                <Image src="/logo.webp" alt="Logo" width={20} height={20} />
+              <Link href="/" className="flex text-xl font-bold">
+                <Image src="/logo.webp" alt="Logo" width={20} height={20} />{" "}
+                <span className="ml-2 text-[#0065FF]">Ruri</span>
+                <span className="text-[#FE9A00]">Dev.</span>
               </Link>
             </div>
 
@@ -52,7 +54,7 @@ export default function Navbar() {
             </div>
             {/* Mobil Menu Content */}
             {isOpen && (
-              <div className="md:hidden bg-white border-t border-gray-100 animate-in slide-in-from-top duration-300">
+              <div className="md:hidden bg-white border-t border-gray-100 animate-in slide-in-from-top duration-300 h-full">
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                   {navLinks.map((link) => (
                     <Link
