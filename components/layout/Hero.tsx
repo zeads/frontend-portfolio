@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -18,9 +19,15 @@ export default function Hero() {
           <br />A Full-Stack Developer specializing in Next.js and Express,
           delivering high-performance applications from database to deployment.
         </p>
-        <Button className="mt-12 bg-[#0065FF] px-7 py-5 hover:bg-blue-800">
-          Let&apos;s Talk
-        </Button>
+        <Link
+          href="https://wa.me/6289615089388"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="mt-12 bg-[#0065FF] px-7 py-5 hover:bg-blue-800">
+            Let&apos;s Talk
+          </Button>
+        </Link>
       </div>
       <div className="mx-auto">
         <Image
