@@ -2,6 +2,9 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
+// React Server Components (Next.js etc)
+import * as motion from "motion/react-client";
+
 export default function Hero() {
   return (
     <section
@@ -9,25 +12,41 @@ export default function Hero() {
       className="lg:h-full flex flex-col items-center justify-between lg:flex-row pt-20"
     >
       <div className="lg:-mt-40 lg:w-1/2 mx-10 xl:ml-12">
-        <h1 className="mt-10 text-4xl sm:text-5xl tracking-[0.03em] leading-15">
+        <motion.h1
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mt-10 text-4xl sm:text-5xl tracking-[0.03em] leading-15"
+        >
           Building Scalable Digital Products with Type-Safe Precision.
-        </h1>
+        </motion.h1>
 
-        <p className="mt-6 max-w-xl leading-7 tracking-wide">
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mt-6 max-w-xl leading-7 tracking-wide"
+        >
           Hi There, I am{" "}
           <span className="font-bold text-[#FE9A00]">Ruri Pelinandang</span>.
           <br />A Full-Stack Developer specializing in Next.js and Express,
           delivering high-performance applications from database to deployment.
-        </p>
-        <Link
-          href="https://wa.me/6289615089388"
-          target="_blank"
-          rel="noopener noreferrer"
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Button className="mt-12 bg-[#0065FF] px-7 py-5 hover:bg-blue-800">
-            Let&apos;s Talk
-          </Button>
-        </Link>
+          <Link
+            href="https://wa.me/6289615089388"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="mt-12 bg-[#0065FF] px-7 py-5 hover:bg-blue-800">
+              Let&apos;s Talk
+            </Button>
+          </Link>
+        </motion.div>
       </div>
       <div className="mx-auto">
         <Image
