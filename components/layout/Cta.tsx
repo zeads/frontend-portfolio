@@ -9,7 +9,7 @@ export default function Cta() {
         think my skills in Next.js, Express, and TypeScript would be a great fit
         for your team, I’d love to hear from you.
       </p>
-      <Button className="mt-12 bg-white text-gray-700 font-bold px-7 py-5 hover:bg-blue-800">
+      <Button className="mt-12 bg-white text-gray-700 font-bold px-7 py-5 hover:bg-blue-800 hover:text-white">
         HIRE ME
       </Button>
     </section>
