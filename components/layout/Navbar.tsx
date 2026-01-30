@@ -1,18 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
+import { Button } from "../ui/button";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
-    { name: "My Workflow", href: "#myworkflow" },
-    { name: "Contact Me", href: "#contactme" },
+    { name: "Home", href: "/#home" },
+    { name: "Services", href: "/#services" },
+    { name: "About", href: "/#about" },
+    { name: "My Workflow", href: "/#myworkflow" },
+    { name: "Contact Me", href: "/#contactme" },
   ];
 
   return (
@@ -67,8 +68,30 @@ export default function Navbar() {
                     </Link>
                   ))}
                 </div>
+                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                  <Link
+                    key="portfolio"
+                    href="/portfolio"
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  >
+                    Portfolio
+                  </Link>
+                </div>
               </div>
             )}
+
+            <div className="hidden md:flex space-x-8">
+              <Button className="bg-white border text-gray-600 border-blue-500 hover:text-white hover:bg-blue-500 transition-colors font-medium">
+                <Link
+                  key="portfolio"
+                  href="/portfolio"
+                  className=" flex gap-2 items-center"
+                >
+                  Portfolio <ArrowUpRight />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </nav>
