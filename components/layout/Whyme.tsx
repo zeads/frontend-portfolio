@@ -8,7 +8,7 @@ export default function Whyme() {
       className=" lg:h-full items-center justify-between  px-10 pt-20 "
     >
       <div className="lg:flex">
-        <div className="w-1/2 mx-auto flex items-center justify-center">
+        <div className="lg:w-1/2 mx-auto flex items-center justify-center mb-10">
           <Image
             src="/profile-why.png"
             alt="hero image"
@@ -17,7 +17,7 @@ export default function Whyme() {
             className="mx-auto  "
           />
         </div>
-        <div className="w-1/2 items-center justify-center mx-auto">
+        <div className="lg:w-1/2 flex flex-col items-center justify-center mx-auto">
           <div className="mb-5">
             <h3 className="font-bold text-sm text-blue-500">ABOUT</h3>
             <h1 className="font-bold text-2xl">Why Hire Me?</h1>

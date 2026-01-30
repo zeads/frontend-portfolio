@@ -21,7 +21,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 transition duration-300"
           >
-            <Linkedin className="text-blue-500" />
+            <Linkedin />
           </Link>
           <Link
             href="https://www.instagram.com/ruri_pelinandang/"
@@ -29,7 +29,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 transition duration-300"
           >
-            <Instagram className="text-blue-500" />
+            <Instagram />
           </Link>
         </div>
       </div>

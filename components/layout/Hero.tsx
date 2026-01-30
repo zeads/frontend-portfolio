@@ -8,7 +8,7 @@ export default function Hero() {
       className="lg:h-full flex flex-col items-center justify-between lg:flex-row pt-20"
     >
       <div className="lg:-mt-40 lg:w-1/2 mx-10 xl:ml-12">
-        <h1 className="mt-10 text-5xl tracking-[0.03em] leading-15">
+        <h1 className="mt-10 text-4xl sm:text-5xl tracking-[0.03em] leading-15">
           Building Scalable Digital Products with Type-Safe Precision.
         </h1>
 
@@ -28,7 +28,7 @@ export default function Hero() {
           alt="hero image"
           width={500}
           height={500}
-          className="-mt-40"
+          className="-mt-20 md:-mt-40"
         />
       </div>
     </section>

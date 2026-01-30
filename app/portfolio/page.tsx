@@ -1,5 +1,5 @@
-import React from "react";
+import Underconstruction from "@/components/ui/Underconstruction";
 
 export default function page() {
-  return <div>Portfolio</div>;
+  return <Underconstruction />;
 }

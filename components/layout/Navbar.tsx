@@ -31,7 +31,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden lg:flex space-x-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -44,7 +44,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Button */}
-            <div className="md:hidden flex items-center">
+            <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-gray-600 hover:text-blue-600 focus:outline-none"
@@ -55,7 +55,7 @@ export default function Navbar() {
             </div>
             {/* Mobil Menu Content */}
             {isOpen && (
-              <div className="md:hidden bg-white border-t border-gray-100 animate-in slide-in-from-top duration-300 h-full">
+              <div className="lg:hidden bg-white border-t border-gray-100 animate-in slide-in-from-top duration-300 h-full">
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                   {navLinks.map((link) => (
                     <Link
@@ -81,7 +81,7 @@ export default function Navbar() {
               </div>
             )}
 
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden lg:flex space-x-8">
               <Button className="bg-white border text-gray-600 border-blue-500 hover:text-white hover:bg-blue-500 transition-colors font-medium">
                 <Link
                   key="portfolio"
